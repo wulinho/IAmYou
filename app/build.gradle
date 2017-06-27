@@ -27,4 +27,12 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+    //屏幕适配的依赖
+    compile 'com.zhy:autolayout:1.4.5'
+    //加载图片的工具
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //圆角的图片
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+
 }
