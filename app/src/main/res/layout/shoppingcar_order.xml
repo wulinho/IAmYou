@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="#f7f7f7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+<include layout="@layout/car_order_head"
+    android:id="@+id/order_head"
+    ></include>
+
+    <view
+        android:id="@+id/view"
+        android:layout_below="@id/order_head"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="20px"></view>
+    <RelativeLayout
+        android:id="@+id/rela_userinfo"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="@color/white"
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200px">
+        <TextView
+            android:id="@+id/order_text1"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="20px"
+            android:textSize="26px"
+            android:textColor="@color/textcolor"
+            android:text="@string/userinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@id/order_text1"
+            android:text="张三"
+            android:layout_marginTop="22px"
+            android:layout_marginLeft="20px"
+            android:id="@+id/user_name"
+            android:textSize="24px"
+            android:textColor="@color/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="13611282222"
+            android:textColor="@color/textcolor"
+            android:id="@+id/user_phonenumber"
+            android:textSize="24px"
+            android:layout_marginLeft="28px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_adress"
+            android:layout_toEndOf="@+id/user_name"
+            android:layout_marginStart="14dp"/>
+        <TextView
+            android:layout_marginLeft="20px"
+            android:text="海淀区1235号软件园南路"
+            android:id="@+id/user_adress"
+            android:layout_below="@+id/user_name"
+            android:layout_marginTop="10px"
+            android:textSize="24px"
+            android:textColor="@color/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/you"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="78px"
+            android:layout_alignParentRight="true"
+            android:layout_width="44px"
+            android:layout_height="44px"/>
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/receiveline"
+            android:layout_width="match_parent"
+            android:layout_height="4px"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_above="@+id/re"
+        android:id="@+id/shopinfo_rela"
+        android:layout_marginTop="28px"
+        android:layout_below="@+id/rela_userinfo"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/shopcount"
+            android:textColor="@color/textcolor"
+            android:textSize="26px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="24px"
+            android:text="件商品"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <view
+            android:id="@+id/viewe"
+            android:layout_below="@+id/shopcount"
+            android:background="#eeeeee"
+            android:layout_width="168px"
+            android:layout_height="1px"></view>
+        <ListView
+            android:id="@+id/shoplist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopcount"
+            android:layout_alignParentStart="true"></ListView>
+        
+        
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/rela_shopprice"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+      <TextView
+          android:text="应付金额:￥1,800.00"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="40px"
+          android:textColor="@color/textcolor"
+          android:textSize="28px"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+        <Button
+            android:background="@color/textred"
+            android:textColor="@color/white"
+            android:textSize="28px"
+            android:layout_marginRight="20px"
+            android:layout_alignParentRight="true"
+            android:text="@string/uporder"
+            android:layout_centerVertical="true"
+            android:layout_width="244px"
+            android:layout_height="70px"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">IAmYou</string>
+    <string name="shoppingcar">购物车</string>
+    <string name="carorder">确认订单</string>
+
+    <string name="shoppingaccountbutton">去结算</string>
+    <string name="shoppingcaraccount">全选</string>
+    <string name="shoppingcartext">总计.</string>
+    <string name="shoppingprice">￥22,222</string>
+    <string name="userinfo">收货人信息</string>
+    <string name="uporder">提交订单</string>
+
+
+
+
+
 </resources>

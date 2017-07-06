@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+<include
+    android:id="@+id/head"
+    layout="@layout/shoppingcar_head">  </include>
+<android.support.v7.widget.RecyclerView
+    android:layout_below="@id/head"
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="925px"></android.support.v7.widget.RecyclerView>
+
+
+
+
+<RelativeLayout
+
+
+   android:layout_below="@+id/recyclerview"
+    android:layout_width="match_parent"
+
+    android:layout_height="90px">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/shoopingcarallcheck"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="12px"
+        android:src="@drawable/shoopingcarallcheck"
+        android:layout_width="35px"
+        android:layout_height="35px"/>
+    <TextView
+        android:textSize="20px"
+        android:layout_marginLeft="20px"
+        android:layout_below="@+id/shoopingcarallcheck"
+        android:layout_marginTop="12px"
+        android:text="@string/shoppingcaraccount"
+        android:layout_width="44px"
+        android:layout_height="20px"/>
+    <TextView
+        android:id="@+id/shopptextaccount"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="26px"
+        android:layout_toRightOf="@+id/shoopingcarallcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="32px"
+        android:textSize="26px"
+        android:textColor="@color/textcolor"
+        android:text="@string/shoppingcartext"
+        />
+    <TextView
+        android:layout_marginTop="32px"
+        android:layout_toRightOf="@+id/shopptextaccount"
+        android:text="@string/shoppingprice"
+        android:textColor="@color/textred"
+        android:textSize="26px"
+        android:id="@+id/shopaccountprice"
+        android:layout_width="wrap_content"
+        android:layout_height="32px"/>
+    
+    <Button
+
+        android:background="@color/roseRed"
+        android:textColor="@color/white"
+        android:textSize="28px"
+        android:id="@+id/shppingaccount"
+        android:text="@string/shoppingaccountbutton"
+        android:layout_marginRight="20px"
+        android:layout_width="270px"
+        android:layout_height="72px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+    
+</RelativeLayout>
+</RelativeLayout>
